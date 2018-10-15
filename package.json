@@ -8,9 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "alias": {
-    "vue" : "./node_modules/vue/dist/vue.min.js"
+    "vue": "./node_modules/vue/dist/vue.min.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^4.7.1"
+  }
 }
