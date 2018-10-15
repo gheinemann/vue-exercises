@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue.js : Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+</head>
+<body>
+    <h1>First, the basics !</h1>
+    <div id="app">
+        <navbar></navbar>
+        <br>
+        <span v-if="has_message" v-bind:title="title">{{message}}/</span><br><br>
+        <span :title="title">Make my day !</span>
+        <button v-on:click="logMessage" @mouseover="logTitle">log me</button>
+        
+        <br>
+        <br>
+        <br>
+        <button @click="toggleMessage">TOGGLE MESSAGE</button>
+        <br>
+        <br>
+        <br>
+        <form action="" @submit="submitForm">
+          <legend>Interact with my data please</legend>
+          <div class="field"><label for="input_message">Message : <input v-model.lazy="message" type="text" name="message" id="input_message"></label></div>
+          <div class="field"><label for="input_has_message">Has message flag : <input v-model="has_message" type="checkbox" name="has_message" id="input_has_message"></label></div>
+          <input type="submit" value="SUBMIT">
+        </form>
+        
+        <br><br>
+        <ul>
+          <li v-for="subject in subjects">{{subject.title}}</li>
+        </ul>
+      </div>
+
+      <script src="./js/basics.js"></script>
+</body>
+</html>
