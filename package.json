@@ -2,10 +2,11 @@
   "name": "vue-exercise",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "parcel index.html basics.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "export APP_ENV=dev&& parcel $(find . -maxdepth 1 -type f -name '*.html')",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -r dist && mkdir dist"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.min.js"
@@ -14,7 +15,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vue/component-compiler-utils": "^2.2.0",
     "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-vue": "^4.7.1"
+    "eslint-plugin-vue": "^4.7.1",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.1"
   }
 }
