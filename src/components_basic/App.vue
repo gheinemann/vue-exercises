@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Counter from "./Counter_bis";
+import Counter from "./Counter";
 
 export default {
   name: "App",

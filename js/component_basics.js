@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Config from "./config";
-import App from "../src/Components_2_App.vue";
+import App from "../src/components_basic/App.vue";
 
 Config();
 
