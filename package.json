@@ -2,30 +2,36 @@
   "name": "vue-exercise",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": ".eslintrc.js",
   "scripts": {
     "start": "export APP_ENV=dev&& parcel $(find . -maxdepth 1 -type f -name '*.html')",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -r dist && mkdir dist"
   },
   "alias": {
-    "vue": "./node_modules/vue/dist/vue.min.js"
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gheinemann/vue-exercises.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gheinemann/vue-exercises/issues"
+  },
+  "homepage": "https://github.com/gheinemann/vue-exercises#readme",
+  "dependencies": {
+    "vue-hot-reload-api": "^2.3.1"
+  },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^2.2.0",
+    "@vue/component-compiler-utils": "^2.3.0",
+    "babel-core": "^6.26.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-vue": "^4.7.1",
     "parcel-bundler": "^1.10.3",
-    "parcel-plugin-vue": "^1.5.0",
-    "vue-template-compiler": "^2.5.17"
-  },
-  "dependencies": {
     "vue": "^2.5.17",
-    "vue-hot-reload-api": "^2.3.1"
+    "vue-template-compiler": "^2.5.17"
   }
 }
